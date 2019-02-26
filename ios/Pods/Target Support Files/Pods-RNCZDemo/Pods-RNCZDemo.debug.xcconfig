@@ -1,5 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-OTHER_LDFLAGS = $(inherited) -ObjC
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DoubleConversion" "${PODS_ROOT}/Headers/Public/RNCzAlipayCalendar" "${PODS_ROOT}/Headers/Public/RNCzCalendar" "${PODS_ROOT}/Headers/Public/RNCzNavigationview" "${PODS_ROOT}/Headers/Public/RNCzPermission" "${PODS_ROOT}/Headers/Public/React" "${PODS_ROOT}/Headers/Public/glog" "${PODS_ROOT}/Headers/Public/yoga"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion" "${PODS_CONFIGURATION_BUILD_DIR}/Folly" "${PODS_CONFIGURATION_BUILD_DIR}/RNCzAlipayCalendar" "${PODS_CONFIGURATION_BUILD_DIR}/RNCzCalendar" "${PODS_CONFIGURATION_BUILD_DIR}/RNCzNavigationview" "${PODS_CONFIGURATION_BUILD_DIR}/RNCzPermission" "${PODS_CONFIGURATION_BUILD_DIR}/React" "${PODS_CONFIGURATION_BUILD_DIR}/glog" "${PODS_CONFIGURATION_BUILD_DIR}/yoga"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DoubleConversion" -isystem "${PODS_ROOT}/Headers/Public/RNCzAlipayCalendar" -isystem "${PODS_ROOT}/Headers/Public/RNCzCalendar" -isystem "${PODS_ROOT}/Headers/Public/RNCzNavigationview" -isystem "${PODS_ROOT}/Headers/Public/RNCzPermission" -isystem "${PODS_ROOT}/Headers/Public/React" -isystem "${PODS_ROOT}/Headers/Public/glog" -isystem "${PODS_ROOT}/Headers/Public/yoga"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"DoubleConversion" -l"Folly" -l"RNCzAlipayCalendar" -l"RNCzCalendar" -l"RNCzNavigationview" -l"RNCzPermission" -l"React" -l"glog" -l"stdc++" -l"yoga" -framework "AVFoundation" -framework "JavaScriptCore" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

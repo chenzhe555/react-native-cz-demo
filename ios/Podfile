@@ -6,6 +6,32 @@ target 'RNCZDemo' do
   # use_frameworks!
 
   # Pods for RNCZDemo
-
+  pod 'RNCzPermission', :path => '../node_modules/react-native-cz-permission/ios/RNCzPermission.podspec'
+  pod 'RNCzNavigationview', :path => '../node_modules/react-native-cz-navigationview/ios/RNCzNavigationview.podspec'
+  pod 'RNCzCalendar', :path => '../node_modules/react-native-cz-calendar/ios/RNCzCalendar.podspec'
+  pod 'RNCzAlipayCalendar', :path => '../node_modules/react-native-cz-alipay-calendar/ios/RNCzAlipayCalendar.podspec'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  'Core',
+  'DevSupport',
+  'RCTText',
+  'RCTNetwork',
+  'RCTWebSocket',
+  'RCTImage',
+  'ART',
+  'RCTActionSheet',
+  'RCTGeolocation',
+  'RCTPushNotification',
+  'RCTSettings',
+  'RCTVibration',
+  'RCTLinkingIOS',
+  'CxxBridge',
+  'RCTAnimation',
+  'RCTCameraRoll',
+  'RCTBlob'
+  ]
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/yoga.podspec'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 end
 
