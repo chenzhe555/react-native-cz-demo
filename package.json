@@ -7,10 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "js-cz-utils": "git+https://github.com/chenzhe555/js-cz-utils.git",
     "react": "16.7.0",
     "react-native": "0.57.8",
-    "react-navigation": "2.3.1",
-    "js-cz-utils": "git+https://github.com/chenzhe555/js-cz-utils.git",
     "react-native-cz-alertview": "git+https://github.com/chenzhe555/react-native-cz-alertview.git",
     "react-native-cz-alipay-calendar": "git+https://github.com/chenzhe555/react-native-cz-alipay-calendar.git",
     "react-native-cz-button": "git+https://github.com/chenzhe555/react-native-cz-button.git",
@@ -26,7 +25,8 @@
     "react-native-cz-permission": "git+https://github.com/chenzhe555/react-native-cz-permisson.git",
     "react-native-cz-reddot": "git+https://github.com/chenzhe555/react-native-cz-reddot.git",
     "react-native-cz-scroll-tab": "git+https://github.com/chenzhe555/react-native-cz-scroll-tab.git",
-    "react-native-cz-toast": "git+https://github.com/chenzhe555/react-native-cz-toast.git"
+    "react-native-cz-toast": "git+https://github.com/chenzhe555/react-native-cz-toast.git",
+    "react-navigation": "2.3.1"
   },
   "devDependencies": {
     "babel-jest": "23.4.0",
