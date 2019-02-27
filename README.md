@@ -25,7 +25,7 @@ RN 通用Modal: [react-native-cz-common-modal](https://github.com/chenzhe555/rea
 
 RN 导航栏: [react-native-cz-navigationview](https://github.com/chenzhe555/react-native-cz-navigationview)
 
-RN App权限: [react-native-cz-permission](https://github.com/chenzhe555/react-native-cz-permission)
+RN App权限: [react-native-cz-permission](https://github.com/chenzhe555/react-native-cz-permisson)
 
 RN Alert: [react-native-cz-alertview](https://github.com/chenzhe555/react-native-cz-alertview)
 

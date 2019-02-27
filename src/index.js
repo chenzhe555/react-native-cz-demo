@@ -5,6 +5,7 @@ import { createStackNavigator } from 'react-navigation';
 
 import MainView from './main';
 import AlertView from './alertview';
+import NavigationView from './navigationview';
 
 export default class AppIndex extends Component{
 
@@ -26,6 +27,12 @@ export default class AppIndex extends Component{
         this.Navigator = createStackNavigator({
             MainView: {
                 screen: MainView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            NavigationView: {
+                screen: NavigationView,
                 navigationOptions: {
                     header: null
                 }

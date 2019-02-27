@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, FlatList, TouchableOpacity, Platform } from 're
 import NavigationView from 'react-native-cz-navigationview';
 import BaseComponent from "./BaseComponent";
 
-import MainView from './main';
 import AlertView from './alertview';
 
 export default class AppMain extends BaseComponent{
@@ -58,7 +57,39 @@ export default class AppMain extends BaseComponent{
 
 
     _onPress = (index) => {
-        this.pushVC('AlertView');
+        if (index == 0) {
+
+        } else if (index == 1) {
+
+        } else if (index == 2) {
+
+        } else if (index == 3) {
+
+        } else if (index == 4) {
+
+        } else if (index == 5) {
+
+        } else if (index == 6) {
+
+        } else if (index == 7) {
+
+        } else if (index == 8) {
+
+        } else if (index == 9) {
+
+        } else if (index == 10) {
+
+        } else if (index == 11) {
+            this.pushVC('NavigationView');
+        } else if (index == 12) {
+
+        } else if (index == 13) {
+            this.pushVC('AlertView');
+        } else if (index == 14) {
+
+        } else if (index == 15) {
+
+        }
     }
     /************************** Render中方法 **************************/
 
