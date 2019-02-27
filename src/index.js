@@ -6,6 +6,8 @@ import { createStackNavigator } from 'react-navigation';
 import MainView from './main';
 import AlertView from './alertview';
 import NavigationView from './navigationview';
+import LoadingView from './loading';
+import ToastView from './toast';
 
 export default class AppIndex extends Component{
 
@@ -33,6 +35,18 @@ export default class AppIndex extends Component{
             },
             NavigationView: {
                 screen: NavigationView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            LoadingView: {
+                screen: LoadingView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            ToastView: {
+                screen: ToastView,
                 navigationOptions: {
                     header: null
                 }

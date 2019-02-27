@@ -62,9 +62,9 @@ export default class AppMain extends BaseComponent{
         } else if (index == 1) {
 
         } else if (index == 2) {
-
+            this.pushVC('ToastView');
         } else if (index == 3) {
-
+            this.pushVC('LoadingView');
         } else if (index == 4) {
 
         } else if (index == 5) {
