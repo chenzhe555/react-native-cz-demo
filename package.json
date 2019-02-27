@@ -26,6 +26,7 @@
     "react-native-cz-reddot": "git+https://github.com/chenzhe555/react-native-cz-reddot.git",
     "react-native-cz-scroll-tab": "git+https://github.com/chenzhe555/react-native-cz-scroll-tab.git",
     "react-native-cz-toast": "git+https://github.com/chenzhe555/react-native-cz-toast.git",
+    "react-native-fast-image": "^5.2.0",
     "react-navigation": "2.3.1"
   },
   "devDependencies": {

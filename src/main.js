@@ -58,9 +58,9 @@ export default class AppMain extends BaseComponent{
 
     _onPress = (index) => {
         if (index == 0) {
-
+            this.pushVC('PanelView');
         } else if (index == 1) {
-
+            this.pushVC('ImagePlaceholderView');
         } else if (index == 2) {
             this.pushVC('ToastView');
         } else if (index == 3) {

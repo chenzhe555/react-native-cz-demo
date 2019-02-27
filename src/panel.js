@@ -1,16 +1,18 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import NavigationView from 'react-native-cz-navigationview';
-import Toast from 'react-native-cz-toast';
 import BaseComponent from "./BaseComponent";
+import Panel from 'react-native-cz-panel';
 
-export default class ToastView extends BaseComponent{
+
+export default class PanelView extends BaseComponent{
 
     /************************** 生命周期 **************************/
     constructor(props) {
         super(props);
         this.initializeParams();
     }
+
     /************************** 继承方法 **************************/
     /************************** 通知 **************************/
     /************************** 创建视图 **************************/
@@ -27,8 +29,15 @@ export default class ToastView extends BaseComponent{
     /************************** List相关方法 **************************/
     /************************** Render中方法 **************************/
 
-    _showToast = (type) => {
-        Toast.show('显示第' + type + 'Toast');
+    _showPanel = (type) => {
+        if(type == 1) {
+            if (!this.panel) {
+                this.panel = new Panel();
+            }
+            console.log('显示Panel');
+        } else {
+            console.log('key***xyz***key自定义日志')
+        }
     }
 
     render() {
@@ -38,9 +47,8 @@ export default class ToastView extends BaseComponent{
                     title={'Toast'}
                     back={this._back}
                 />
-                <Text onPress={this._showToast.bind(this,1)} style={[{height: 40}]}>显示第一个Toast</Text>
-                <Text onPress={this._showToast.bind(this,2)} style={[{height: 40}]}>显示第二个Toast</Text>
-                <Text onPress={this._showToast.bind(this,3)} style={[{height: 40}]}>显示第三个Toast</Text>
+                <Text onPress={this._showPanel.bind(this,1)} style={[{height: 40}]}>显示Panel</Text>
+                <Text onPress={this._showPanel.bind(this,2)} style={[{height: 40}]}>自定义日志</Text>
             </View>
         )
     }

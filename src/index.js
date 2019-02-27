@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity, DeviceEventEmitter } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-
 
 import MainView from './main';
 import AlertView from './alertview';
 import NavigationView from './navigationview';
 import LoadingView from './loading';
 import ToastView from './toast';
+import PanelView from './panel';
+import ImagePlaceholderView from './imageplaceholder';
+
 
 export default class AppIndex extends Component{
 
@@ -17,6 +19,7 @@ export default class AppIndex extends Component{
         this.initializeParams();
         console.disableYellowBox = true;
     }
+
     /************************** 继承方法 **************************/
     /************************** 通知 **************************/
     /************************** 创建视图 **************************/
@@ -47,6 +50,18 @@ export default class AppIndex extends Component{
             },
             ToastView: {
                 screen: ToastView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            PanelView: {
+                screen: PanelView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            ImagePlaceholderView: {
+                screen: ImagePlaceholderView,
                 navigationOptions: {
                     header: null
                 }

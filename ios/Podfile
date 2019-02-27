@@ -6,6 +6,8 @@ target 'RNCZDemo' do
   # use_frameworks!
 
   # Pods for RNCZDemo
+  pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image/react-native-fast-image.podspec'
+  
   pod 'RNCzPermission', :path => '../node_modules/react-native-cz-permission/ios/RNCzPermission.podspec'
   pod 'RNCzNavigationview', :path => '../node_modules/react-native-cz-navigationview/ios/RNCzNavigationview.podspec'
   pod 'RNCzCalendar', :path => '../node_modules/react-native-cz-calendar/ios/RNCzCalendar.podspec'

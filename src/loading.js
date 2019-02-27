@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text } from 'react-native';
 import NavigationView from 'react-native-cz-navigationview';
 import Loading from 'react-native-cz-loading';
+import BaseComponent from "./BaseComponent";
 
-export default class LoadingView extends Component{
+export default class LoadingView extends BaseComponent{
 
     /************************** 生命周期 **************************/
     constructor(props) {
