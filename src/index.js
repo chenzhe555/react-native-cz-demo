@@ -13,6 +13,11 @@ import ButtonView from './button';
 import TextInputView from './textinput';
 import CalendarView from './calendar';
 import AlipayCalendarView from './alipaycalendar';
+import CommonModalView from './commonmodal';
+import ScrollTabView from './scrolltab';
+import JSUtilsView from './jsutils';
+import ReddotView from './reddot';
+import PermissionView from './permission';
 
 export default class AppIndex extends Component{
 
@@ -87,6 +92,18 @@ export default class AppIndex extends Component{
                     header: null
                 }
             },
+            ScrollTabView: {
+                screen: ScrollTabView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            CommonModalView: {
+                screen: CommonModalView,
+                navigationOptions: {
+                    header: null
+                }
+            },
             AlipayCalendarView: {
                 screen: AlipayCalendarView,
                 navigationOptions: {
@@ -95,6 +112,24 @@ export default class AppIndex extends Component{
             },
             AlertView: {
                 screen: AlertView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            JSUtilsView: {
+                screen: JSUtilsView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            ReddotView: {
+                screen: ReddotView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            PermissionView: {
+                screen: PermissionView,
                 navigationOptions: {
                     header: null
                 }

@@ -76,19 +76,19 @@ export default class AppMain extends BaseComponent{
         } else if (index == 8) {
 
         } else if (index == 9) {
-
+            this.pushVC('ScrollTabView');
         } else if (index == 10) {
-
+            this.pushVC('CommonModalView');
         } else if (index == 11) {
             this.pushVC('NavigationView');
         } else if (index == 12) {
-
+            this.pushVC('PermissionView');
         } else if (index == 13) {
             this.pushVC('AlertView');
         } else if (index == 14) {
-
+            this.pushVC('ReddotView');
         } else if (index == 15) {
-
+            this.pushVC('JSUtilsView');
         }
     }
     /************************** Render中方法 **************************/
