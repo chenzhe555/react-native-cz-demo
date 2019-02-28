@@ -9,7 +9,10 @@ import LoadingView from './loading';
 import ToastView from './toast';
 import PanelView from './panel';
 import ImagePlaceholderView from './imageplaceholder';
-
+import ButtonView from './button';
+import TextInputView from './textinput';
+import CalendarView from './calendar';
+import AlipayCalendarView from './alipaycalendar';
 
 export default class AppIndex extends Component{
 
@@ -62,6 +65,30 @@ export default class AppIndex extends Component{
             },
             ImagePlaceholderView: {
                 screen: ImagePlaceholderView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            ButtonView: {
+                screen: ButtonView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            TextInputView: {
+                screen: TextInputView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            CalendarView: {
+                screen: CalendarView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            AlipayCalendarView: {
+                screen: AlipayCalendarView,
                 navigationOptions: {
                     header: null
                 }

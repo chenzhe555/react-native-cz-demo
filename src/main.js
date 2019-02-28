@@ -66,13 +66,13 @@ export default class AppMain extends BaseComponent{
         } else if (index == 3) {
             this.pushVC('LoadingView');
         } else if (index == 4) {
-
+            this.pushVC('ButtonView');
         } else if (index == 5) {
-
+            this.pushVC('TextInputView');
         } else if (index == 6) {
-
+            this.pushVC('CalendarView');
         } else if (index == 7) {
-
+            this.pushVC('AlipayCalendarView');
         } else if (index == 8) {
 
         } else if (index == 9) {

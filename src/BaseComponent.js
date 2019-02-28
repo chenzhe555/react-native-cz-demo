@@ -9,9 +9,6 @@ export default class BaseComponent extends React.Component{
     }
     /************************** 继承方法 **************************/
     _back = () => {
-        console.log('---------- log start ------');
-        console.log('back');
-        console.log('---------- log end ------');
         this.props.navigation.pop();
     }
     /************************** 通知 **************************/
