@@ -18,6 +18,7 @@ import ScrollTabView from './scrolltab';
 import JSUtilsView from './jsutils';
 import ReddotView from './reddot';
 import PermissionView from './permission';
+import FlatListView from './flatlist';
 
 export default class AppIndex extends Component{
 
@@ -130,6 +131,12 @@ export default class AppIndex extends Component{
             },
             PermissionView: {
                 screen: PermissionView,
+                navigationOptions: {
+                    header: null
+                }
+            },
+            FlatListView: {
+                screen: FlatListView,
                 navigationOptions: {
                     header: null
                 }

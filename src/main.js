@@ -74,7 +74,7 @@ export default class AppMain extends BaseComponent{
         } else if (index == 7) {
             this.pushVC('AlipayCalendarView');
         } else if (index == 8) {
-
+            this.pushVC('FlatListView');
         } else if (index == 9) {
             this.pushVC('ScrollTabView');
         } else if (index == 10) {
