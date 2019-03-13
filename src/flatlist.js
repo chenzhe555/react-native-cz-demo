@@ -20,7 +20,7 @@ export default class CustomFlatListView extends BaseComponent{
     * 初始化参数
     * */
     initializeParams() {
-        this.test1 = false;
+        this.count = 0;
     }
     /************************** 子组件回调方法 **************************/
     /************************** 外部调用方法 **************************/
@@ -39,8 +39,14 @@ export default class CustomFlatListView extends BaseComponent{
     }
 
     _refresh = (callback) => {
+        this.count = 0;
         setTimeout( () => {
-            // callback({'list': [1,2,3,4,5,6,7,8,9,0]});
+            let list = [];
+            for (let i = 0; i < 20; ++i) {
+                list.push(++this.count);
+            }
+
+            callback({'list': list, 'fail': 0});
             // callback({'list': [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]});
             // callback({'list': [1,2,3,4,5]});
             // if (this.test1) {
@@ -49,14 +55,37 @@ export default class CustomFlatListView extends BaseComponent{
             //     this.test1 = true;
             //     callback({'list': [1,2,3,4,5], 'fail': 1});
             // }
-            callback({'list': []});
+            // callback({'list': []});
         }, 1500);
     }
 
     _loadMore = (callback) => {
         setTimeout( () => {
-            callback({'list': [1,2,3,4,5,6]});
+            let list = [];
+            let count = this.count == 16 ? 2 : 2;
+            for (let i = 0; i < count; ++i) {
+                list.push(++this.count);
+            }
+            if (this.count == 20) list = [];
+            callback({'list': list, 'fail': 0});
         }, 1500);
+    }
+
+
+    _renderListHeaderComponent = () => {
+        return (
+            <View style={[{height: 50, backgroundColor: 'red'}]}>
+                <Text>Header</Text>
+            </View>
+        )
+    }
+
+    _renderListFooterComponent = () => {
+        return (
+            <View style={[{height: 100, backgroundColor: 'blue'}]}>
+                <Text>Footer</Text>
+            </View>
+        )
     }
 
     render() {
@@ -68,10 +97,14 @@ export default class CustomFlatListView extends BaseComponent{
                 />
                 <View style={[{flex: 1}]}>
                     <FlatListView
-                        pageCount={5}
+                        pageCount={22}
+                        topLoadContentOffset={40}
+                        bottomLoadContentOffset={40}
                         renderItem={this._renderItem}
                         refresh={this._refresh}
                         loadMore={this._loadMore}
+                        ListHeaderComponent={this._renderListHeaderComponent}
+                        ListFooterComponent={this._renderListFooterComponent}
                     />
                 </View>
             </View>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import BaseComponent from "./BaseComponent";
 import NavigationView from 'react-native-cz-navigationview';
 import ImagePlaceholder from 'react-native-cz-image-placeholder';
@@ -79,6 +79,7 @@ export default class ImagePlaceholderView extends BaseComponent{
                     onLoadEnd={this._onLoadEnd}
                 />
                 <Text onPress={this._modifyUrl.bind(this,1)} style={[{height: 40}]}>修改图片地址</Text>
+                <Image source={require('./images/default_image_pikaqiu.png')} style={[{width: 120, height: 92,marginTop: 100}]}/>
             </View>
         )
     }

@@ -19,6 +19,7 @@ import JSUtilsView from './jsutils';
 import ReddotView from './reddot';
 import PermissionView from './permission';
 import FlatListView from './flatlist';
+import StatusView from './statusview';
 
 export default class AppIndex extends Component{
 
@@ -140,7 +141,13 @@ export default class AppIndex extends Component{
                 navigationOptions: {
                     header: null
                 }
-            }
+            },
+            StatusView: {
+                screen: StatusView,
+                navigationOptions: {
+                    header: null
+                }
+            },
         });
     }
     /************************** 子组件回调方法 **************************/

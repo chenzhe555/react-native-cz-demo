@@ -4,6 +4,7 @@ import NavigationView from 'react-native-cz-navigationview';
 import BaseComponent from "./BaseComponent";
 
 import AlertView from './alertview';
+import StatusView from "./statusview";
 
 export default class AppMain extends BaseComponent{
 
@@ -38,7 +39,8 @@ export default class AppMain extends BaseComponent{
                 'RN App权限: react-native-cz-permission',
                 'RN Alert: react-native-cz-alertview',
                 'RN 红点: react-native-cz-reddot',
-                'JS utils: js-cz-utils'
+                'RN StatusView: react-native-cz-statusview',
+                'JS utils: js-cz-utils',
                 ]
         }
     }
@@ -88,6 +90,8 @@ export default class AppMain extends BaseComponent{
         } else if (index == 14) {
             this.pushVC('ReddotView');
         } else if (index == 15) {
+            this.pushVC('StatusView');
+        } else if (index == 16) {
             this.pushVC('JSUtilsView');
         }
     }

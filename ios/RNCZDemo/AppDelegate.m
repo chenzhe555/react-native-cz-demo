@@ -9,6 +9,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <HHZAlert/HHZToastView.h>
 
 @implementation AppDelegate
 
@@ -29,6 +30,8 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [[HHZToastView shareManager] showToastType:1001 text:@"1112" time:2];
+
   return YES;
 }
 

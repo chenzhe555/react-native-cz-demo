@@ -6,12 +6,21 @@ target 'RNCZDemo' do
   # use_frameworks!
 
   # Pods for RNCZDemo
+  
+  #HHZ
+  pod 'HHZAlert', :git => 'https://github.com/chenzhe555/HHZAlert.git'
+  pod 'HHZConfigs', :git => 'https://github.com/chenzhe555/HHZConfigs.git'
+  pod 'HHZUtils', :git => 'https://github.com/chenzhe555/HHZUtils.git'
+  pod 'HHZCategory', :git => 'https://github.com/chenzhe555/HHZCategory.git'
+  pod 'HHZBaseClass', :git => 'https://github.com/chenzhe555/HHZBaseClass.git'
+  
   pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image/react-native-fast-image.podspec'
   
   pod 'RNCzPermission', :path => '../node_modules/react-native-cz-permission/ios/RNCzPermission.podspec'
   pod 'RNCzNavigationview', :path => '../node_modules/react-native-cz-navigationview/ios/RNCzNavigationview.podspec'
   pod 'RNCzCalendar', :path => '../node_modules/react-native-cz-calendar/ios/RNCzCalendar.podspec'
   pod 'RNCzAlipayCalendar', :path => '../node_modules/react-native-cz-alipay-calendar/ios/RNCzAlipayCalendar.podspec'
+  pod 'RNCzToast', :path => '../node_modules/react-native-cz-toast/ios/RNCzToast.podspec'
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
   'Core',
   'DevSupport',

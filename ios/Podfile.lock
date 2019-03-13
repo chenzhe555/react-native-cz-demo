@@ -7,6 +7,79 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - HHZAlert (0.0.2.7):
+    - HHZAlert/HHZAlert (= 0.0.2.7)
+  - HHZAlert/HHZAlert (0.0.2.7):
+    - HHZAlert/HHZAlert/alert (= 0.0.2.7)
+    - HHZAlert/HHZAlert/toast (= 0.0.2.7)
+  - HHZAlert/HHZAlert/alert (0.0.2.7)
+  - HHZAlert/HHZAlert/toast (0.0.2.7)
+  - HHZBaseClass (0.0.1.12):
+    - HHZBaseClass/HHZBaseClass (= 0.0.1.12)
+  - HHZBaseClass/HHZBaseClass (0.0.1.12):
+    - HHZBaseClass/HHZBaseClass/kit (= 0.0.1.12)
+    - HHZBaseClass/HHZBaseClass/navi (= 0.0.1.12)
+    - HHZBaseClass/HHZBaseClass/others (= 0.0.1.12)
+    - HHZBaseClass/HHZBaseClass/tableview (= 0.0.1.12)
+    - HHZBaseClass/HHZBaseClass/vc (= 0.0.1.12)
+  - HHZBaseClass/HHZBaseClass/kit (0.0.1.12)
+  - HHZBaseClass/HHZBaseClass/navi (0.0.1.12)
+  - HHZBaseClass/HHZBaseClass/others (0.0.1.12)
+  - HHZBaseClass/HHZBaseClass/tableview (0.0.1.12):
+    - HHZBaseClass/HHZBaseClass/tableview/cell (= 0.0.1.12)
+  - HHZBaseClass/HHZBaseClass/tableview/cell (0.0.1.12)
+  - HHZBaseClass/HHZBaseClass/vc (0.0.1.12)
+  - HHZCategory (0.0.2.13):
+    - HHZCategory/HHZCategory (= 0.0.2.13)
+  - HHZCategory/HHZCategory (0.0.2.13):
+    - HHZCategory/HHZCategory/foundation (= 0.0.2.13)
+    - HHZCategory/HHZCategory/uikit (= 0.0.2.13)
+  - HHZCategory/HHZCategory/foundation (0.0.2.13)
+  - HHZCategory/HHZCategory/uikit (0.0.2.13)
+  - HHZConfigs (0.0.1.3):
+    - HHZConfigs/HHZConfigs (= 0.0.1.3)
+  - HHZConfigs/HHZConfigs (0.0.1.3):
+    - HHZConfigs/HHZConfigs/tool (= 0.0.1.3)
+  - HHZConfigs/HHZConfigs/tool (0.0.1.3)
+  - HHZUtils (0.0.3.5):
+    - HHZUtils/HHZUtils (= 0.0.3.5)
+  - HHZUtils/HHZUtils (0.0.3.5):
+    - HHZUtils/HHZUtils/archive (= 0.0.3.5)
+    - HHZUtils/HHZUtils/auth (= 0.0.3.5)
+    - HHZUtils/HHZUtils/calculate (= 0.0.3.5)
+    - HHZUtils/HHZUtils/cookie (= 0.0.3.5)
+    - HHZUtils/HHZUtils/date (= 0.0.3.5)
+    - HHZUtils/HHZUtils/device (= 0.0.3.5)
+    - HHZUtils/HHZUtils/encryption (= 0.0.3.5)
+    - HHZUtils/HHZUtils/exception (= 0.0.3.5)
+    - HHZUtils/HHZUtils/file (= 0.0.3.5)
+    - HHZUtils/HHZUtils/http (= 0.0.3.5)
+    - HHZUtils/HHZUtils/json (= 0.0.3.5)
+    - HHZUtils/HHZUtils/kit (= 0.0.3.5)
+    - HHZUtils/HHZUtils/numerical (= 0.0.3.5)
+    - HHZUtils/HHZUtils/plist (= 0.0.3.5)
+    - HHZUtils/HHZUtils/qrcode (= 0.0.3.5)
+    - HHZUtils/HHZUtils/sectionIndex (= 0.0.3.5)
+    - HHZUtils/HHZUtils/system (= 0.0.3.5)
+  - HHZUtils/HHZUtils/archive (0.0.3.5)
+  - HHZUtils/HHZUtils/auth (0.0.3.5)
+  - HHZUtils/HHZUtils/calculate (0.0.3.5)
+  - HHZUtils/HHZUtils/cookie (0.0.3.5)
+  - HHZUtils/HHZUtils/date (0.0.3.5)
+  - HHZUtils/HHZUtils/device (0.0.3.5)
+  - HHZUtils/HHZUtils/encryption (0.0.3.5):
+    - HHZUtils/HHZUtils/encryption/GTMBase64 (= 0.0.3.5)
+  - HHZUtils/HHZUtils/encryption/GTMBase64 (0.0.3.5)
+  - HHZUtils/HHZUtils/exception (0.0.3.5)
+  - HHZUtils/HHZUtils/file (0.0.3.5)
+  - HHZUtils/HHZUtils/http (0.0.3.5)
+  - HHZUtils/HHZUtils/json (0.0.3.5)
+  - HHZUtils/HHZUtils/kit (0.0.3.5)
+  - HHZUtils/HHZUtils/numerical (0.0.3.5)
+  - HHZUtils/HHZUtils/plist (0.0.3.5)
+  - HHZUtils/HHZUtils/qrcode (0.0.3.5)
+  - HHZUtils/HHZUtils/sectionIndex (0.0.3.5)
+  - HHZUtils/HHZUtils/system (0.0.3.5)
   - libwebp (0.6.1):
     - libwebp/core (= 0.6.1)
     - libwebp/dec (= 0.6.1)
@@ -99,6 +172,8 @@ PODS:
     - React
   - RNCzPermission (0.0.2):
     - React
+  - RNCzToast (0.0.6):
+    - React
   - SDWebImage/Core (4.4.2)
   - SDWebImage/GIF (4.4.2):
     - FLAnimatedImage (~> 1.0)
@@ -112,6 +187,11 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - HHZAlert (from `https://github.com/chenzhe555/HHZAlert.git`)
+  - HHZBaseClass (from `https://github.com/chenzhe555/HHZBaseClass.git`)
+  - HHZCategory (from `https://github.com/chenzhe555/HHZCategory.git`)
+  - HHZConfigs (from `https://github.com/chenzhe555/HHZConfigs.git`)
+  - HHZUtils (from `https://github.com/chenzhe555/HHZUtils.git`)
   - react-native-fast-image (from `../node_modules/react-native-fast-image/react-native-fast-image.podspec`)
   - React/ART (from `../node_modules/react-native`)
   - React/Core (from `../node_modules/react-native`)
@@ -134,6 +214,7 @@ DEPENDENCIES:
   - RNCzCalendar (from `../node_modules/react-native-cz-calendar/ios/RNCzCalendar.podspec`)
   - RNCzNavigationview (from `../node_modules/react-native-cz-navigationview/ios/RNCzNavigationview.podspec`)
   - RNCzPermission (from `../node_modules/react-native-cz-permission/ios/RNCzPermission.podspec`)
+  - RNCzToast (from `../node_modules/react-native-cz-toast/ios/RNCzToast.podspec`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga/yoga.podspec`)
 
 SPEC REPOS:
@@ -150,6 +231,16 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  HHZAlert:
+    :git: https://github.com/chenzhe555/HHZAlert.git
+  HHZBaseClass:
+    :git: https://github.com/chenzhe555/HHZBaseClass.git
+  HHZCategory:
+    :git: https://github.com/chenzhe555/HHZCategory.git
+  HHZConfigs:
+    :git: https://github.com/chenzhe555/HHZConfigs.git
+  HHZUtils:
+    :git: https://github.com/chenzhe555/HHZUtils.git
   React:
     :path: "../node_modules/react-native"
   react-native-fast-image:
@@ -162,8 +253,27 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-cz-navigationview/ios/RNCzNavigationview.podspec"
   RNCzPermission:
     :path: "../node_modules/react-native-cz-permission/ios/RNCzPermission.podspec"
+  RNCzToast:
+    :path: "../node_modules/react-native-cz-toast/ios/RNCzToast.podspec"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
+
+CHECKOUT OPTIONS:
+  HHZAlert:
+    :commit: 3b5544cc0ec4badc0a55c4402e610e695be63ba6
+    :git: https://github.com/chenzhe555/HHZAlert.git
+  HHZBaseClass:
+    :commit: 7dd0a5bf29f5fafe2f406fbb875a8441eda1a2b9
+    :git: https://github.com/chenzhe555/HHZBaseClass.git
+  HHZCategory:
+    :commit: c7ce6b2b80180e3859eadd59f54f89af0f58211d
+    :git: https://github.com/chenzhe555/HHZCategory.git
+  HHZConfigs:
+    :commit: d021b12dbe081ca732d309b414be13db984a1ec9
+    :git: https://github.com/chenzhe555/HHZConfigs.git
+  HHZUtils:
+    :commit: 472e431524f844fd03d6150520c69e31243f0917
+    :git: https://github.com/chenzhe555/HHZUtils.git
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -171,6 +281,11 @@ SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
   glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
+  HHZAlert: bddb039b42c6944e212f499fc6f3ac19702da38c
+  HHZBaseClass: 95b2ef50fcc65a7a3f88b24fe79b0056f5ae063c
+  HHZCategory: 6e60df15dfa858892be53ce9f63f03accd40b41f
+  HHZConfigs: 1ddbea52ec7aeee8774fa7d79ac5929099b72c9b
+  HHZUtils: 4c92277f7681d976fb5fef75b9b92d713c2dad03
   libwebp: 38b601da310fe7c329c638d0c0d10aed006a54fe
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
   react-native-fast-image: 4170ad074e9de6c428fc4580ecbaacabf74901a6
@@ -178,9 +293,10 @@ SPEC CHECKSUMS:
   RNCzCalendar: 0ce58d87667feea299053fd570e77efab2ef113e
   RNCzNavigationview: 0b9327df1457aecca24222e0bbbc9a9b59551f1c
   RNCzPermission: f4d63463a97be5dbe10974f1455a49a48f086ad7
+  RNCzToast: af899089ac6d4731fa5e85f33f8d9637db7822b8
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 01ffaed02eb56d20a74452c23852d52881545e33
+PODFILE CHECKSUM: 14cc116c57e62a6877c5b0ec927466b24be13108
 
 COCOAPODS: 1.5.3
