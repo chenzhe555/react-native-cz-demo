@@ -46,7 +46,7 @@ export default class CustomFlatListView extends BaseComponent{
                 list.push(++this.count);
             }
 
-            callback({'list': list, 'fail': 0});
+            callback({'list': [], 'fail': 0});
             // callback({'list': [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]});
             // callback({'list': [1,2,3,4,5]});
             // if (this.test1) {
@@ -88,6 +88,14 @@ export default class CustomFlatListView extends BaseComponent{
         )
     }
 
+    _renderEmptyComponent() {
+        return (
+            <View style={[{backgroundColor: 'red', flex: 1}]}>
+                <Text>ahsdbshdsad122123bhhsb</Text>
+            </View>
+        )
+    }
+
     render() {
         return (
             <View style={[{flex: 1}]}>
@@ -105,6 +113,7 @@ export default class CustomFlatListView extends BaseComponent{
                         loadMore={this._loadMore}
                         ListHeaderComponent={this._renderListHeaderComponent}
                         ListFooterComponent={this._renderListFooterComponent}
+                        ListEmptyComponent={this._renderEmptyComponent()}
                     />
                 </View>
             </View>
